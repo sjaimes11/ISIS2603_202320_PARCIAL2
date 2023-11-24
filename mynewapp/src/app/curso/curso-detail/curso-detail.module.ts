@@ -1,11 +1,17 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { CursoDetailComponent } from './curso-detail.component';
+import { Component, Input, OnInit } from '@angular/core';
+import { Curso } from '../curso';
 
-@NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [CursoDetailComponent]
+@Component({
+  selector: 'app-curso-detail',
+  templateUrl: './curso-detail.component.html',
+  styleUrls: ['./curso-detail.component.css']
 })
-export class CursoDetailModule { }
+export class CursoDetailComponent implements OnInit {
+
+  @Input() cursoDetail!: Curso;
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

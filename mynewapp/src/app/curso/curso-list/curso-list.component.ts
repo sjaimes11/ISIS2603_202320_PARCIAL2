@@ -8,7 +8,7 @@ import { CursoService } from '../curso.service' ;
   templateUrl: './curso-list.component.html',
   styleUrls: ['./curso-list.component.css']
 })
-export class CurosListComponent implements OnInit {
+export class CursoListComponent implements OnInit {
 
   cursos: Array<Curso> = [];
   message: string = "";

@@ -10,4 +10,5 @@ import { CursoDetailComponent } from './curso-detail/curso-detail.component';
   exports: [CursoListComponent, CursoDetailComponent],
   declarations: [CursoListComponent, CursoDetailComponent]
 })
-export class RecetaModule { }
+export class CursoModule { 
+  }
